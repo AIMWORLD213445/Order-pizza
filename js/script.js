@@ -20,7 +20,6 @@ Pizza.prototype.price = function(){
     }else {
       price = price;
     }
-    price = price.toFixed(2);
     return price;
 };
 
@@ -49,6 +48,6 @@ $(document).ready(function() {
       $("#add-newPizza").show();
     	});
 
-    $("#showPrice").text("$" + myPizza.price());
+    $("#showPrice").text("$" + myPizza.price().toFixed(2));
   });
 });
