@@ -1,3 +1,16 @@
+body{
+  text-align: justify;
+  margin: auto;
+  width: 50em;
+  font-size: 225%;
+}
+
+.container{
+  background:rgba(255,255,255,0.9);
+  height: 50em;
+  position: relative;
+}
+
 .results{
   display: none;
 }

@@ -31,20 +31,18 @@ $(document).ready(function() {
     event.preventDefault();
     var inputtedToppingsArray=[]
     $("input:checkbox[name=newToppings]:checked").each(function(){
-         inputtedToppingsArray.push(parseInt($(this).val()));
-       });
-    console.log(inputtedToppingsArray);
+      inputtedToppingsArray.push(parseInt($(this).val()));
+    });
+
     var inputtedToppings = inputtedToppingsArray.reduce(function(last, next){
       return last + next;
     });
 
     var inputtedSize = parseInt($("input:radio[name=newSize]:checked").val());
-
     var myPizza = new Pizza(inputtedToppings, inputtedSize);
 
-      $("#add-newPizza").hide();
-      $(".results").show();
-
+    $("#add-newPizza").hide();
+    $(".results").show();
 
     $("#resetBtn").click(function() {
       $(".results").hide();

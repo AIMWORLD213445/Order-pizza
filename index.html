@@ -7,8 +7,8 @@
     <script src="js/script.js"></script>
     <title>Order Pizza</title>
   </head>
-  <body>
-    <div class="jumbotron container">
+  <body background="img/Pizza.jpg">
+    <div class="container">
       <form id="newPizza">
         <div class="form-group">
            <h2>Please select the toppings you want:</h2>
@@ -19,6 +19,9 @@
            <input type="checkbox" name="newToppings" value=1 >Roasted Garlic<br>
            <input type="checkbox" name="newToppings" value=1 >Carmelized Onions<br>
 
+<br>
+<br>
+
            <h2>Choose the size of your pizza:</h2>
            <label>
              <input type="radio" name="newSize" value="1" required checked>
@@ -28,9 +31,16 @@
              <input type="radio" name="newSize" value="3">
              Large<br>
            </label>
+           <br>
+           <br>
         </div>
         <button type="submit" class="btn-primary btn-lg main" id="add-newPizza">Submit Order</button>
-        <button id="resetBtn" type="reset" class="btn btn-danger btn-lg">Reset</button>
+        <button id="resetBtn" type="reset" class="btn btn-danger btn-lg">Reset Order</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </form>
       <div class="results">
         <h3>Your pizza will be:</h3>
