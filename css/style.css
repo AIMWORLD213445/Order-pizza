@@ -3,11 +3,13 @@ body{
   margin: auto;
   width: 50em;
   font-size: 225%;
+  background-size: cover;
 }
+
 
 .container{
   background:rgba(255,255,255,0.8);
-  height: 50em;
+  height: 54em;
   position: relative;
 }
 
