@@ -12,13 +12,13 @@ Takes user input regarding size and toppings for a pizza and uses objects and pr
 
 It can collect user input for pizza size/toppings.
 
-    Example Input: large, pineapple
+    Example Input: large, pineapple, peppers
 
     Example Output: stores some value for the distinct inputs
 
 It can use a prototype to determine price from collected inputs, and return this price to the customer.
 
-    Example Input: large, pineapple
+    Example Input: large, pineapple, peppers
 
     Example Output: "Your final cost is $17"
 

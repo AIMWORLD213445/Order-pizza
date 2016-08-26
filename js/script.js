@@ -13,14 +13,14 @@ Pizza.prototype.price = function(){
       price = price + (this.toppings);
     } else if (this.toppings > 0 && this.size ===3 ) {
       price = (price*1.5) + this.toppings;
-    }else if (this.toppings === 0 && this.size ===1 ) {
+    } else if (this.toppings === 0 && this.size ===1 ) {
       price = price*.75;
-    }else if (this.toppings === 0 && this.size ===3 ) {
+    } else if (this.toppings === 0 && this.size ===3 ) {
       price = price*1.5;
-    }else {
+    } else {
       price = price;
     }
-    return price;
+   return price;
 };
 
 //front end logic
