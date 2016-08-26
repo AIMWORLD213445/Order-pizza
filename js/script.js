@@ -41,7 +41,16 @@ $(document).ready(function() {
     var inputtedSize = parseInt($("input:radio[name=newSize]:checked").val());
 
     var myPizza = new Pizza(inputtedToppings, inputtedSize);
-    console.log(myPizza);
+
+      $("#add-newPizza").hide();
+      $(".results").show();
+
+
+    $("#resetBtn").click(function() {
+      $(".results").hide();
+      $("#add-newPizza").show();
+    	});
+
     $("#showPrice").text("$" + myPizza.price());
   });
 });
