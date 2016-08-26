@@ -9,7 +9,7 @@ Pizza.prototype.price = function(){
   var price = 10
   if (this.toppings <  ){
       price = price += 1
-    } else if (this.size < 5) {
+    } else if (this.size < 3) {
       price = price * .75
     } else {
       price = price
