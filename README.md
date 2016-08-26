@@ -25,7 +25,7 @@ It can use a prototype to determine price from collected inputs, and return this
 
 ## Setup/Installation Requirements
 
-Clone from github and open HTML file, or go to
+Clone from github and open HTML file, or go to https://github.com/AIMWORLD213445/Order-pizza
 
 ## Known Bugs
 
