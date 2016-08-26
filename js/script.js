@@ -8,11 +8,11 @@ function Pizza(toppings, size) {
 Pizza.prototype.price = function(){
   var price = 10;
   if (this.toppings > 0 && this.size === 1){
-      price = (price += (this.toppings))*.75;
+      price = (price*.75) + this.toppings;
     } else if (this.toppings > 0 && this.size === 2) {
-      price = price += (this.toppings);
+      price = price + (this.toppings);
     } else if (this.toppings > 0 && this.size ===3 ) {
-      price = (price += (this.toppings))*1.5;
+      price = (price*1.5) + this.toppings;
     }else if (this.toppings === 0 && this.size ===1 ) {
       price = price*.75;
     }else if (this.toppings === 0 && this.size ===3 ) {
@@ -28,7 +28,14 @@ Pizza.prototype.price = function(){
 $(document).ready(function() {
   $("form#newPizza").submit(function(event) {
     event.preventDefault();
-    var inputtedToppings=0
+    var inputtedToppingsArray=[]
+    $("input:checkbox[name=newToppings]:checked").each(function(){
+         inputtedToppingsArray.push(parseInt($(this).val()));
+       });
+    console.log(inputtedToppingsArray);
+    var inputtedToppings = inputtedToppingsArray.reduce(function(last, next){
+      return last + next;
+    });
 
     var inputtedSize = parseInt($("input:radio[name=newSize]:checked").val());
 
