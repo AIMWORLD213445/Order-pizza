@@ -8,16 +8,16 @@
     <title>Order Pizza</title>
   </head>
   <body>
-    <div class="container">
+    <div class="jumbotron container">
       <form id="newPizza">
         <div class="form-group">
            <h2>Please select the toppings you want:</h2>
-           <input type="checkbox" name="newToppings" value=0>Plain Cheese<br>
-           <input type="checkbox" name="newToppings" value=1>Peppers<br>
-           <input type="checkbox" name="newToppings" value=1>Olives<br>
-           <input type="checkbox" name="newToppings" value=1>Pineapple<br>
-           <input type="checkbox" name="newToppings" value=1>Roasted Garlic<br>
-           <input type="checkbox" name="newToppings" value=1>Carmelized Onions<br>
+           <input type="checkbox" name="newToppings" value=0 required checked >Cheese<br>
+           <input type="checkbox" name="newToppings" value=1 >Peppers<br>
+           <input type="checkbox" name="newToppings" value=1 >Olives<br>
+           <input type="checkbox" name="newToppings" value=1 >Pineapple<br>
+           <input type="checkbox" name="newToppings" value=1 >Roasted Garlic<br>
+           <input type="checkbox" name="newToppings" value=1 >Carmelized Onions<br>
 
            <h2>Choose the size of your pizza:</h2>
            <label>
@@ -31,7 +31,8 @@
         </div>
         <button type="submit" class="btn-success btn-lg" id="add-newPizza">Submit Order</button>
       </form>
-      <div>
+      <div class="results">
+        <h3>Your pizza will be:</h3>
         <ul id="showPrice"></ul>
       </div>
     </div>

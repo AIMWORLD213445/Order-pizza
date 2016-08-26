@@ -41,6 +41,6 @@ $(document).ready(function() {
 
     var myPizza = new Pizza(inputtedToppings, inputtedSize);
     console.log(myPizza);
-    $("#showPrice").append("<li>" + myPizza.price() + "</li>");
+    $("#showPrice").append("<li>"+ "$" + myPizza.price() + "</li>");
   });
 });
